@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selamat Ulang Tahun Lilik!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 40px;
+            font-size: 48px;
+            font-weight: bold;
+            border-bottom: 5px solid #ff4500;
+        }
+        .content {
+            padding: 50px 20px;
+        }
+        .age {
+            font-size: 28px;
+            color: #ff6347;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #32cd32;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+        .button:hover {
+            background-color: #228b22;
+        }
+        .card {
+            display: none;
+            background-color: #fff;
+            color: #333;
+            padding: 30px;
+            margin-top: 30px;
+            width: 80%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid #32cd32;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            animation: showCard 0.5s ease-in-out;
+        }
+        .card h2 {
+            font-size: 36px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+        .card p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
+        @keyframes showCard {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Selamat Ulang Tahun Lilik!
+    </header>
+
+    <div class="content">
+        <p>Hari ini Lilik berusia <span class="age">24 Tahun</span>!</p>
+        <p>Semoga selalu diberkahi dengan kebahagiaan, kesehatan, dan kesuksesan di tahun yang baru ini. Nikmati setiap langkah perjalananmu!</p>
+        <button class="button" onclick="showCard()">Tampilkan Kartu Ucapan</button>
+    </div>
+
+    <div class="card" id="birthdayCard" style="margin-bottom: 50px;">
+        <audio controls>
+            <source src="😭 congrats repeat year aja pokoknya buat kamu 💙 bahasainggris englishbooster viral receh ngakak.mp3" type="audio/mp3">
+        </audio>
+        <h2>congrats repeat year, Lilik!</h2>
+        <p>congrats repeat year, oji-san! congrats, a 24 year old, semoga dilancarkan rezekinya untuk nge gift saya game di steam</p>
+        <p>Jadikan setiap hari spesial, karena kamu luar biasa! 🎉</p>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/USpw3I41pnc?si=iGYGFpCH7yk4wxrL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script>
+        function showCard() {
+            document.getElementById('birthdayCard').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
